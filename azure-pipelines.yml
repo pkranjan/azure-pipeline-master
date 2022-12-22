@@ -19,5 +19,7 @@ steps:
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
+    echo "Master Commit Message: ${commit_message}"
+    echo "Master Test Message: ${test_message}"
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
