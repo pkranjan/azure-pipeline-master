@@ -10,8 +10,10 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  commit_message: "${Build.SourceVersionMessage}"
-  test_message: "Test Message"
+- name: commit_message
+  value: "${Build.SourceVersionMessage}"
+- name: test_message
+  value: "Test Message"
 
 steps:
 - script: echo Hello, world!
