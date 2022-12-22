@@ -11,6 +11,7 @@ pool:
 
 variables:
   commit_message: "${Build.SourceVersionMessage}"
+  test_message: "Test Message"
 
 steps:
 - script: echo Hello, world!
